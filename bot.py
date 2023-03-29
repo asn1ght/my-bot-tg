@@ -91,7 +91,7 @@ markup_request = ReplyKeyboardMarkup(resize_keyboard=True).add(
 )
 
 
-@dp.message_handler(commands=['4'])
+@dp.message_handler(text=['4'])
 async def process_hi6_command(message: types.Message):
     await message.reply("Шестое - запрашиваем контакт и геолокацию\nЭти две кнопки не зависят друг от друга",
                         reply_markup=markup_request)
